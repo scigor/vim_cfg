@@ -8,6 +8,7 @@ set smartcase
 
 " relative line numbers
 set relativenumber
+set number
 
 " ----------------------- VISUAL STUDIO SETTINGS -----------------
 " binds toggle line comment 
@@ -28,21 +29,21 @@ nnoremap <leader>g gS:vsc Tools.InvokePeasyMotion<CR>
 nmap <leader>; gS:vsc Tools.InvokePeasyMotionTextSelect<CR>
 
 "Jump to word beginning in current line
-nmap <leader><leader>w gS:vsc Tools.InvokePeasyMotionLineJumpToWordBegining<CR>
+nmap <leader>w gS:vsc Tools.InvokePeasyMotionLineJumpToWordBegining<CR>
 "Jump to word ending in current line
-nmap <leader><leader>e gS:vsc Tools.InvokePeasyMotionLineJumpToWordEnding<CR>
+nmap <leader>e gS:vsc Tools.InvokePeasyMotionLineJumpToWordEnding<CR>
 
 "Jump to any open document tab
-nmap <leader><leader>t gS:vsc Tools.InvokePeasyMotionJumpToDocumentTab<CR>
+nmap <leader>t gS:vsc Tools.InvokePeasyMotionJumpToDocumentTab<CR>
 
 "Jump to other diff side
-nmap <leader><leader>d gS:vsc Diff.SwitchBetweenLeftAndRight<CR>
+nmap <leader>d gS:vsc Diff.SwitchBetweenLeftAndRight<CR>
 
 "Jump to line beginning:
-nmap <leader><leader>l gS:vsc Tools.InvokePeasyMotionJumpToLineBegining<CR>
+nmap <leader>l gS:vsc Tools.InvokePeasyMotionJumpToLineBegining<CR>
 
 "Two char search mode:
-nmap <leader><leader>c gS:vsc Tools.InvokePeasyMotionTwoCharJump<CR>
+nmap <leader>c gS:vsc Tools.InvokePeasyMotionTwoCharJump<CR>
 
 " ----------- RESHARPER SETTINGS --------------------------------
 " binds silent cleanup code to equal sign

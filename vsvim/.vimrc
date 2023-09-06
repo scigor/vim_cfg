@@ -10,13 +10,17 @@ set smartcase
 set relativenumber
 set number
 
-" ----------------------- VISUAL STUDIO SETTINGS -----------------
+" ----------------------- VISUAL STUDIO SHORTCUTS -----------------
 " binds toggle line comment 
 nmap <A-k> :vsc Edit.ToggleLineComment<CR>
 vmap <A-k> :vsc Edit.ToggleLineComment<CR>
 
 " bind QuickInfo (info shown when mouse over)
 nmap gh :vsc Edit.QuickInfo<CR>
+
+" close all but this
+nmap <leader>q :vsc File.CloseAllButThis<CR> 
+
 
 " ----------------------- PEASY MOTION SETTINGS ------------------
 " gS prefix is added for ViEmu, no use for VsVim AFAIK.

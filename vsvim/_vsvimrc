@@ -2,6 +2,9 @@
 " use windows clipboard as unnamed register, allowing to copy and paste from/to other programs
 set clipboard=unnamed
 
+" setting leader to space
+let mapleader="\<space>"
+
 " only case sensitive search if non lower case characters are present
 set ignorecase
 set smartcase
@@ -21,6 +24,10 @@ nmap gh :vsc Edit.QuickInfo<CR>
 " close all but this
 nmap <leader>q :vsc File.CloseAllButThis<CR> 
 
+" find references
+nmap <leader>fr :vsc Edit.FindAllReferences<CR>
+
+nmap <leader>se :vsc View.SolutionExplorer<CR>
 
 " ----------------------- PEASY MOTION SETTINGS ------------------
 " gS prefix is added for ViEmu, no use for VsVim AFAIK.
@@ -58,3 +65,4 @@ nmap gr :vsc ReSharper.ReSharper_Rename<CR>
 
 " binds move of variable
 nmap <leader>m :vsc ReSharper.ReSharper_Move<CR>
+

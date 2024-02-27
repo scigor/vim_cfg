@@ -26,8 +26,10 @@ nmap <leader>q :vsc File.CloseAllButThis<CR>
 
 " find references
 nmap <leader>fr :vsc Edit.FindAllReferences<CR>
-
+nmap <leader>sr :vsc ReSharper.ReSharper_ShowReferencesGivenByVS<CR>
+ 
 nmap <leader>se :vsc View.SolutionExplorer<CR>
+
 
 " ----------------------- PEASY MOTION SETTINGS ------------------
 " gS prefix is added for ViEmu, no use for VsVim AFAIK.
@@ -65,4 +67,7 @@ nmap gr :vsc ReSharper.ReSharper_Rename<CR>
 
 " binds move of variable
 nmap <leader>m :vsc ReSharper.ReSharper_Move<CR>
+
+" toggle inlay hints
+nmap <leader>ti :vsc ReSharper_ToggleInlayHints<CR> 
 
